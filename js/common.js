@@ -33,7 +33,6 @@ for (var i=0; i<clearBtns.length; i++) {
 decimalBtn.addEventListener('click', decimal);
 howWorkBtn.addEventListener('click', howWork);
 
-
 function numberPress(number) {
     if (MemoryNewNumber) {
         display.value = number;
