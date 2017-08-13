@@ -1,0 +1,24 @@
+/* ==================================================
+Desktop First
+================================================== */
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:992px) {
+    .h1,
+    .how {
+        display: none;
+    }
+    .calc {
+        margin: calc(50vh - 257px) calc(50% - 218px);
+    }
+}
+@media screen and (max-width:768px) {
+    
+}
+@media screen and (max-width:480px) {
+    
+}
+@media screen and (max-width:320px) {
+    
+}

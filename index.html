@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Calc</title>
+        <meta name="description" content="">
+        <meta name="author" content="Andrei Bagmet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <table class="calc">
+                <tr>
+                    <td colspan="4">
+                        <input type="text" value="0" disabled class="calc-display" id="display">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn clear-btn" id="ce">ce</button>
+                    </td>  
+                    <td>
+                        <button class="btn clear-btn" id="c">c</button>
+                    </td>
+                    <td>
+                        <button value="Деление;" class="btn operation">/</button>
+                    </td>
+                    <td>    
+                        <button value="Умножение;" class="btn operation">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn number">7</button>
+                    </td>  
+                    <td>
+                        <button class="btn number">8</button>
+                    </td>
+                    <td>
+                        <button class="btn number">9</button>
+                    </td>
+                    <td>    
+                        <button value="Вычитание;" class="btn operation">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn number">4</button>
+                    </td>  
+                    <td>
+                        <button class="btn number">5</button>
+                    </td>
+                    <td>
+                        <button class="btn number">6</button>
+                    </td>
+                    <td>    
+                        <button value="Сложение;" class="btn operation">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn number">1</button>
+                    </td>  
+                    <td>
+                        <button class="btn number">2</button>
+                    </td>
+                    <td>
+                        <button class="btn number">3</button>
+                    </td>
+                    <td rowspan="2">    
+                        <button value="Результат." class="btn btn-equal operation" id="result">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn btn-null number">0</button>
+                    </td>  
+                    <td>
+                        <button class="btn" id="decimal">.</button>
+                    </td>
+                </tr>
+            </table>
+            <h1 class="h1">Простой калькулятор</h1>
+            <button class="how" id="howWork">Как это работает?</button>
+            <ul class="op-list" id="operationsList"></ul> 
+        </div>
+    <!-- common js -->
+        <script src="js/common.js"></script>
+    </body>
+</html>

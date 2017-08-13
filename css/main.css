@@ -1,0 +1,142 @@
+/* ==================================================
+Fonts
+================================================== */
+@import url('https://fonts.googleapis.com/css?family=Gabriela|Orbitron');
+@font-face {
+    font-family: 'digital7_mono';
+    src: url('../fonts/digital7_mono.eot');
+    src: url('../fonts/digital7_mono.eot') format('embedded-opentype'),
+         url('../fonts/digital7_mono.woff2') format('woff2'),
+         url('../fonts/digital7_mono.woff') format('woff'),
+         url('../fonts/digital7_mono.ttf') format('truetype'),
+         url('../fonts/digital7_mono.svg#digital7_mono') format('svg');
+}
+/* ==================================================
+Basic Settings
+================================================== */
+body {
+    font-size: 16px;
+    min-width: 320px;
+    line-height: 1.75;
+    overflow-x: hidden;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+/* ==================================================
+Main Section
+================================================== */
+.wrapper {
+    background: url(../images/calc-bg.jpg) no-repeat center/cover;
+    height: 100vh;
+}
+.calc {
+    background: #f4f4f4;
+    padding: 30px 15px;
+    border-radius: 10px;
+    float: left;
+    margin: calc(50vh - 257px) 100px 0 100px;
+}
+.calc td {
+    padding: 6px;
+}
+.calc-display {
+    font: 55px 'digital7_mono', sans-serif;
+    width: 350px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #363636;
+    color: #fff;
+    margin-bottom: 35px;
+    text-align: right;
+}
+.calc-display:focus {
+    outline: none;
+}
+.btn {
+    font: 25px 'Orbitron', sans-serif;
+    width: 85px;
+    height: 50px;
+    text-transform: uppercase;
+    background: #fcfcfc;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+    color: #666;
+    padding: 0;
+    outline: 0;
+    transition: all .4s;
+}
+.btn-equal {
+    height: 112px;
+}
+.btn-null {
+    width: 185px;
+}
+.btn:hover {
+    color: #fcfcfc;
+    background: #d45757;
+    border-color: #d45757;
+    cursor: pointer;
+}
+.h1 {
+    font: 40px 'Gabriela', sans-serif;
+    text-transform: capitalize;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 23.5vh 0 30px;
+}
+.how {
+    font: 20px 'Gabriela', sans-serif;
+    border: none;
+    color: #09c;
+    background: #f4f4f4;
+    border-radius: 30px;
+    padding: 11px 20px;
+    letter-spacing: 1px;
+    outline: 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+.how:hover {
+    color: #f4f4f4;
+    background: #09c;
+}
+.op-list {
+    font: 19px 'Gabriela', sans-serif;
+    list-style: none;
+    color: #09c;
+    display: table;
+    padding: 0;
+    margin: 30px 0 0 660px;
+}
+.op-list li {
+    padding: 15px 25px 0;
+    background: #f4f4f4;
+}
+.op-list li:first-child {
+    border-radius: 10px 10px 0 0;
+}
+.op-list li:last-child {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 15px;
+}
+.op-list li::before {
+    margin-right: 12px;
+    font: 22px 'Orbitron', sans-serif;
+}
+.op-list li:first-child::before {
+    content: '/';
+}
+.op-list li:nth-child(2)::before {
+    content: '*';
+}
+.op-list li:nth-child(3)::before {
+    content: '-';
+}
+.op-list li:nth-child(4)::before {
+    content: '+';
+}
+.op-list li:last-child::before {
+    content: '=';
+}
