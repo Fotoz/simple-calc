@@ -5,12 +5,17 @@ Desktop First
     
 }
 @media screen and (max-width:992px) {
+	.wrapper {
+		height: auto;
+		padding: 1px 0;
+	}
     .h1,
     .how {
         display: none;
     }
     .calc {
-        margin: calc(50vh - 257px) calc(50% - 218px);
+        margin: calc(50vh - 258.5px) calc(50% - 218px);
+        float: none;
     }
 }
 @media screen and (max-width:768px) {
